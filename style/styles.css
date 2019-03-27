@@ -136,7 +136,9 @@ h1 {
 .about-us_item h4:hover {
   color: #ffffff;
 }
-
+.modal-body {
+  text-align: center;
+}
 /*RESPONSIVE*/
 @media screen and (max-width: 1202px) {
  /* .wrapper {
