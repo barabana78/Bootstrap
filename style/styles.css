@@ -1,0 +1,173 @@
+@font-face {
+  font-family: Proxima-Nova-Sbold;
+  src: url("../fonts/proxima-Nova-Sbold.otf");
+}
+@font-face {
+  font-family: Proxima_nova_bold;
+  src: url("../fonts/proxima_nova_bold.ttf");
+}
+body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', Arial, sans-serif;
+}
+/*.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}*/
+img {
+  width: auto;
+  max-width: 100%;
+}
+h3 {
+  font-family: Proxima-Nova-Sbold, Arial, sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #665f60;
+  text-transform: uppercase;
+}
+a {
+  color: inherit;
+}
+a:hover {
+  color: #454d55;
+}
+/*HEADER*/
+header {
+  background: #bcb5d0 url("../images/bgHeader.jpg") no-repeat 0 0;
+  /*background-size: 100% 100%;*/
+  max-width: 1600px;
+  height: 100vh;
+  padding-top: 35px;
+}
+.logo {
+}
+.desktop-menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav a {
+  font-family: Proxima-Nova-Sbold, Arial, sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.mobile-menu {
+  display: none;
+}
+.fas.fa-list {
+  color: #ffffff;
+}
+.hero {
+  padding-top: 15%;
+  text-align: center;
+}
+h1 {
+  font-family: Proxima_nova_bold, Arial, sans-serif;
+  font-size: 72px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.hero p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  color: #ffffff;
+}
+/*ABOUT US*/
+.about-us {
+  background-color: #ebebeb;
+}
+.about-us_cont {
+  /*max-width: 380px;*/
+  text-align: center;
+}
+.about-us a {
+  display: block;
+}
+.icon-aboutUs {
+  position: absolute;
+  top: 10%;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+.about-us h3 {
+  color: #ffffff;
+}
+.about-us h3:hover {
+  color: #454d55;
+}
+
+.p-aboutUs {
+  color: #665f60;
+  font-size: 20px;
+}
+.btn-aboutUs {
+  width: 200px;
+  height: 55px;
+  border-color: #7d7a7c;
+  font-size: 20px;
+}
+.about-us_item {
+  padding-top: 99px;
+  text-align: center;
+  height: 400px;
+}
+.about-us_item-dark {
+  background-color: #dbdbdb;
+}
+.about-us_item-light {
+  background-color: #ebebeb;
+}
+.about-us_item-big {
+  padding: 116px 30px 0;
+  color: #ffffff;
+  text-align: center;
+  background: #c1bfd9 url("../images/bgOurServices.jpg") no-repeat center 0;
+  height: 799px;
+}
+.about-us_item a:hover,
+.about-us_item h4:hover {
+  color: #ffffff;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1202px) {
+ /* .wrapper {
+    width: 100%;
+    padding: 0 20px;
+  }*/
+}
+
+@media screen and (max-width: 992px) {
+  .revers {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 800px) {
+  .mobile-menu {
+    display: inline-flex;
+    margin-left: auto;
+    position: relative;
+  }
+  .mobile-menu label {cursor: pointer;}
+  .desktop-menu {display: none;}
+  .my-dd-menu {display: none;}
+  .mobile-menu input[type="checkbox"]:checked + .my-dd-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+  }
+  h1 {
+    font-size: 60px;
+  }
+
+}
